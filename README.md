@@ -1,2 +1,2 @@
-# HELPFit
+# HELPFit.github.io
 HELPFit Web Application
