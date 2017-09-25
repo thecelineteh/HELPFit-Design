@@ -1,0 +1,4 @@
+Resources/references
+
+1. Slideshow
+https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
