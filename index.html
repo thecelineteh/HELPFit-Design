@@ -14,24 +14,19 @@
   .item{width:100%;
         height:50%;
         margin:auto;}
-
   .carousel-inner{width:100%;
                   height:55%
                   margin:auto;}
-
   .carousel-caption{color:#ffffff;
                     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                     margin:auto;}
-
   .formContent{background-color:#fafafa;
               color:#000000;}
-
-
   #img{width:600px;
       height:400px;
       margin:auto;
       padding:10px;}
-    
+
   .img-overlay {
           position: absolute;
           top: 310;
@@ -40,7 +35,6 @@
           right: 0;
           text-align: center;
         }
-
   .img-overlay:before {
     content: ' ';
     display: block;
@@ -48,11 +42,9 @@
     width: 50%;
     height: 50%;
   }
-
   .register { background-color: black;
               color: white;
             }
-
           </style>
         </head>
 
@@ -155,18 +147,18 @@
         <div class="row">
           <div class="col-xs-12 col-lg-6">
             <img id="img" class="img-responsive" src = "images/member_signUp.jpg" alt="Member Sign Up" width="500px" height="500px">
-            <div class="registerBtn">
-              <button type="button" class="btn-btn-large btn-block" data-toggle="modal" data-target="#myModal"><a href ="#" > REGISTER NOW </a></button>
+            <div class="img-overlay">
+              <button type="button" class="btn-btn-primary register" data-toggle="modal" data-target="#myModal"><a href ="#" > REGISTER NOW </a></button>
             </div>
           </div>
 
           <div class="col-xs-12 col-lg-6 img-wrapper">
             <img id="img" class="img-responsive" src ="images/trainer_signUp.jpg" alt="Trainer Sign Up" width="600px" height="50px">
             <div class="img-overlay">
-              <a class="btn btn-primary register" href="#"> REGISTER NOW </a>
+              <button type="button" class="btn btn-primary register"> REGISTER NOW </button>
             </div>
           </div>
-          
+
         </div>
       </div>
 
