@@ -12,21 +12,25 @@
   header{background-color:#ffffff;}
   .main{background-color:#e0e0e0;}
   .item{width:100%;
-    height:50%;
-    margin:auto;}
-
-    .carousel-inner{width:100%;
-      height:55%
-      margin:auto;}
-      .carousel-caption{color:#ffffff;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        height:50%;
         margin:auto;}
-        #img{width:600px;
-          height:400px;
-          margin:auto;
-          padding:10px;}
+
+  .carousel-inner{width:100%;
+                  height:55%
+                  margin:auto;}
+
+  .carousel-caption{color:#ffffff;
+                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    margin:auto;}
+
+  .formContent{background-color:#fafafa;
+              color:#000000;}
 
 
+  #img{width:600px;
+      height:400px;
+      margin:auto;
+      padding:10px;}
 
           </style>
         </head>
@@ -39,7 +43,8 @@
         <header>
           <div class="row">
             <div class="col-xs-4 col-md-5 col-lg-7">
-              <img src="images/helpfitLogo.png" alt="HELPFit Logo" width="350" height="90">
+              <img src="images/dumbbells.png" alt="HELPFit Logo" width="80" height="70" hspace="5px">
+              <img src="images/helpfit.PNG" alt="HELPFit Word" width="150" height="70">
             </div>
 
             <div class="col-xs-8 col-md-7 col-lg-5">
@@ -126,12 +131,12 @@
         </a>
       </div>
 
-      <div class="container">
+      <div class="container1">
         <div class="row">
           <div class="col-xs-12 col-lg-6">
             <img id="img" class="img-responsive" src = "images/member_signUp.jpg" alt="Member Sign Up" width="500px" height="500px">
             <div class="registerBtn">
-              <button class="btn-btn-large btn-block" type="button"><a href ="#" > REGISTER NOW </a></button>
+              <button type="button" class="btn-btn-large btn-block" data-toggle="modal" data-target="#myModal"><a href ="#" > REGISTER NOW </a></button>
             </div>
           </div>
 
@@ -140,6 +145,101 @@
           </div>
         </div>
       </div>
-    </body>
 
-    </html>
+      <div class="container2">
+
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          <div class="signUpForm">
+
+            <div class="FormContent">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title" align="center"> Member Sign Up </h2>
+              </div>
+
+              <div class="modal-body">
+              <div class="row">
+                <div class="form-group">
+                  <label class="col-xs-12 col-sm-3">Username : </label>
+                  <div class="col-xs-6 col-sm-6">
+                    <input type="text" name="username" class="form-control input-lg" id="inputName" placeholder="Username">
+                  </div>
+                </div>
+              </div>
+
+            </br>
+
+            <div class="row">
+              <div class="form-group">
+                <label class="col-xs-12 col-sm-3">Password :</label>
+                <div class="col-xs-6 col-sm-6">
+                  <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Password">
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+              <div class="form-group">
+                <label class="col-xs-12 col-sm-3">Confirm Password :</label>
+                <div class="col-xs-6 col-sm-6">
+                  <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm Password">
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <div class="row">
+              <div class="form-group">
+                <label class="col-xs-6 col-sm-2">First Name : </label>
+                <div class="col-xs-3 col-sm-3">
+                  <input type="text" name="firstName" class="form-control input-lg" id="firstName" placeholder="First Name">
+                </div>
+
+                <label class="col-xs-6 col-sm-2">Last Name : </label>
+                <div class="col-xs-3 col-sm-3">
+                  <input type="text" name="lastName" class="form-control input-lg" id="lastName" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+              <div class="form-group">
+                <label class="col-xs-12 col-sm-3">Email :</label>
+                <div class="col-xs-6 col-sm-6">
+                  <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g: john@gmail.com">
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+              <div class="form-group">
+                <label class="col-xs-12 col-sm-3">Level :</label>
+                <div class="col-xs-6 col-sm-6">
+                  <select class="form-control">
+                    <option value="Choose your level" selected disabled>Choose your Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Advanced"> Advanced </option>
+                    <option value="Expert"> Expert </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            </body>
+
+            </html>
