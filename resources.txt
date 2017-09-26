@@ -2,3 +2,6 @@ Resources/references
 
 1. Slideshow
 https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+2. Button over image
+https://stackoverflow.com/questions/35647044/boostrap-how-to-stick-a-button-over-an-image-when-re-sizing
