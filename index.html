@@ -31,6 +31,27 @@
       height:400px;
       margin:auto;
       padding:10px;}
+    
+  .img-overlay {
+          position: absolute;
+          top: 320;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
+  .img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    width: 50%;
+    height: 50%;
+  }
+
+  .register { background-color: black;
+              color: white;
+            }
 
           </style>
         </head>
@@ -140,9 +161,13 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-lg-6">
+          <div class="col-xs-12 col-lg-6 img-wrapper">
             <img id="img" class="img-responsive" src ="images/trainer_signUp.jpg" alt="Trainer Sign Up" width="600px" height="50px">
+            <div class="img-overlay">
+              <a class="btn btn-primary register" href="#"> REGISTER NOW </a>
+            </div>
           </div>
+          
         </div>
       </div>
 
