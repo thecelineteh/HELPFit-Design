@@ -1,0 +1,18 @@
+header{background-color:#ffffff;}
+/*nav background*/
+.nav-pills{background-color:#d50000;}
+/*initial nav color words */
+.nav-pills a{color:#ffffff;}
+/*black colour words when hover */
+.nav-pills a:hover{color:#000000;
+                  background-color:#000000;}
+
+.nav-pills .active a:hover{color:#000000;}
+/* nav active color and background color */
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {color: #000000;
+                                                              background-color: #ff8a80;
+                                                              border :solid 1px;
+                                                              border-color: #d50000;}
+/* */
+.nav-pills > li.active > a:hover {background-color: #eeee;
+                                  color:#000000;}
