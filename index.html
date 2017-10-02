@@ -1,87 +1,84 @@
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href ="css/bootstrap-social.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <title>Home</title>
-  <style>
-  header{background-color:#ffffff;}
-  .main{background-color:#e0e0e0;}
-  .item{width:100%;
-        height:50%;
-        margin:auto;}
-  .carousel-inner{width:100%;
-                  height:55%;
-                  margin:auto;}
-  .carousel-caption{color:#ffffff;
-                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-                    margin:auto;}
-  .formContent{background-color:#fafafa;
-              color:#000000;}
-  #img{width:600px;
-      height:400px;
-      margin:auto;
-      padding:10px;}
-
-  .img-overlay {
-          position: absolute;
-          top: 310;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          text-align: center;
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href ="css/bootstrap-social.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Home Page</title>
+    <style>
+        header{background-color:#ffffff;}
+        .main{background-color:#e0e0e0;}
+        .item{width:100%;
+              height:50%;
+              margin:auto;}
+        .carousel-inner{width:100%;
+                        height:55%;
+                        margin:auto;}
+        .carousel-caption{color:#ffffff;
+                          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                          margin:auto;}
+        .formContent{background-color:#fafafa;
+                    color:#000000;}
+        #img{width:600px;
+            height:400px;
+            margin:auto;
+            padding:10px;}
+        .img-overlay {
+                position: absolute;
+                top: 310;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+              }
+        .img-overlay:before {
+          content: ' ';
+          display: block;
+          width: 50%;
+          height: 50%;
         }
-  .img-overlay:before {
-    content: ' ';
-    display: block;
-    /* adjust 'height' to position overlay content vertically */
-    width: 50%;
-    height: 50%;
-  }
-  .register { background-color: black;
-              color: white;
-            }
-  .register:hover {
-    background-color: #009933;
-  }
-          </style>
-        </head>
+        .register { background-color: black;
+                    color: white;
+                  }
+        .register:hover {
+          background-color: #009933;
+        }
+      </style>
+    </head>
+    <body class="main">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      </script>
+      <script src="js/bootstrap.min.js"></script>
 
-        <body class="main">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        </script>
-        <script src="js/bootstrap.min.js"></script>
+      <header>
+        <div class="row">
+          <div class="col-xs-4 col-md-5 col-lg-7">
+            <img src="images/helpfitLogo.png" alt="HELPFit Logo" width="350" height="90">
+          </div>
 
-        <header>
-          <div class="row">
-            <div class="col-xs-4 col-md-5 col-lg-7">
-              <img src="images/helpfitLogo.png" alt="HELPFit Logo" width="350" height="90">
-            </div>
-
-            <div class="col-xs-8 col-md-7 col-lg-5">
-              <form class="form-inline"
+          <div class="col-xs-8 col-md-7 col-lg-5">
+            <form class="form-inline">
               <div class="form-group">
-                <br>
+                <br />
                 <label>Username : </label>
-                <input type="text" name="username" id="userName" placeholder="Enter username">
+                <input type="text" name="username" id="userName" placeholder="Enter username" size="17">
 
+                &nbsp;
                 <label> Password : </label>
-                <input type="password" name="password" id="password" placeholder="Enter password">
+                <input type="password" name="password" id="password" placeholder="Enter password" size="17">
 
+                &nbsp;
                 <button type="submit">Login</button>
-
               </div>
             </form>
           </div>
         </div>
       </header>
 
+      <main>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -95,21 +92,21 @@
           <div class="item active">
             <img class="img-responsive center-block" src="images/gym1.jpg" alt="Gym1">
             <div class="carousel-caption">
-              <h3>" HELPFit, <br> get FIT together! "</h3>
+              <h3>" HELPFit, <br /> get FIT together! "</h3>
             </div>
           </div>
 
           <div class="item">
             <img class="img-responsive center-block" src="images/gym2.jpg" alt="Gym2">
             <div class="carousel-caption">
-              <h3>" Get THIN, <br> and WIN! "</h3>
+              <h3>" Get THIN, <br /> and WIN! "</h3>
             </div>
           </div>
 
           <div class="item">
             <img class="img-responsive center-block" src="images/gym3.jpg" alt="Gym3">
             <div class="carousel-caption">
-              <h3>" FITTER, <br> HEALTHIER, <br> HAPPIER "</h3>
+              <h3>" FITTER, <br /> HEALTHIER, <br /> HAPPIER "</h3>
             </div>
           </div>
 
@@ -123,7 +120,7 @@
           <div class="item">
             <img class="img-responsive center-block" src="images/gym5.png" alt="Gym5">
             <div class="carousel-caption">
-              <h3>" Get ACTIVE, <br> Get SWEATY! "</h3>
+              <h3>" Get ACTIVE, <br /> Get SWEATY! "</h3>
             </div>
           </div>
 
@@ -133,7 +130,6 @@
               <h3>" Your first step to FITNESS! "</h3>
             </div>
           </div>
-
         </div>
 
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -161,7 +157,6 @@
               <button type="button" class="btn btn-primary register" data-toggle="modal" data-target="#myModal2"> REGISTER NOW </button>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -187,173 +182,160 @@
                 </div>
               </div>
 
-            <br />
+              <br />
 
-            <div class="row">
-              <div class="form-group">
-                <label class="col-xs-12 col-sm-3">Password :</label>
-                <div class="col-xs-6 col-sm-6">
-                  <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Enter password">
+              <div class="row">
+                <div class="form-group">
+                  <label class="col-xs-12 col-sm-3">Password :</label>
+                  <div class="col-xs-6 col-sm-6">
+                    <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Enter password">
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <br />
+              <br />
 
-            <div class="row">
-              <div class="form-group">
-                <label class="col-xs-12 col-sm-3">Confirm Password :</label>
-                <div class="col-xs-6 col-sm-6">
-                  <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm password">
+              <div class="row">
+                <div class="form-group">
+                  <label class="col-xs-12 col-sm-3">Confirm Password :</label>
+                  <div class="col-xs-6 col-sm-6">
+                    <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm password">
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <br />
-            <div class="row">
-              <div class="form-group">
-                <label class="col-xs-12 col-sm-3">First Name :</label>
-                <div class="col-xs-6 col-sm-6">
-                  <input type="text" name="firstName" class="form-control input-lg" id="firstName" placeholder="Enter first name">
+              <br />
+
+              <div class="row">
+                <div class="form-group">
+                  <label class="col-xs-12 col-sm-3">Full Name : </label>
+                  <div class="col-xs-6 col-sm-6">
+                    <input type="text" name="fullName" class="form-control input-lg" id="fullName" placeholder="Enter your full name">
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <br />
+              <br />
 
-            <div class="row">
-              <div class="form-group">
-                <label class="col-xs-12 col-sm-3">Last Name :</label>
-                <div class="col-xs-6 col-sm-6">
-                  <input type="text" name="lastName" class="form-control input-lg" id="lastName" placeholder="Enter last name">
+              <div class="row">
+                <div class="form-group">
+                  <label class="col-xs-12 col-sm-3">Email :</label>
+                  <div class="col-xs-6 col-sm-6">
+                    <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g. john@gmail.com">
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <br />
+              <br />
 
-            <div class="row">
-              <div class="form-group">
-                <label class="col-xs-12 col-sm-3">Email :</label>
-                <div class="col-xs-6 col-sm-6">
-                  <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g. john@gmail.com">
+              <div class="row">
+                <div class="form-group">
+                  <label class="col-xs-12 col-sm-3">Level :</label>
+                  <div class="col-xs-6 col-sm-6">
+                    <select class="form-control">
+                      <option value="Choose your level" selected disabled>Choose your level</option>
+                      <option value="Beginner">Beginner</option>
+                      <option value="Advanced">Advanced</option>
+                      <option value="Expert">Expert</option>
+                    </select>
+                  </div>
                 </div>
               </div>
+              <br />
+              <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
+              <br />
+              <br />
             </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
 
-            <br />
+      <div class="container3">
 
-            <div class="row">
-              <div class="form-group">
-                <label class="col-xs-12 col-sm-3">Level :</label>
-                <div class="col-xs-6 col-sm-6">
-                  <select class="form-control">
-                    <option value="Choose your level" selected disabled>Choose your level</option>
-                    <option value="Beginner">Beginner</option>
-                    <option value="Advanced">Advanced</option>
-                    <option value="Expert">Expert</option>
-                  </select>
+        <div class="modal fade" id="myModal2" role="dialog">
+          <div class="modal-dialog">
+            <div class="signUpForm_Trainer">
+
+                <div class="FormContent">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title" align="center">Sign up as a trainer</h2>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="form-group">
+                        <label class="col-xs-12 col-sm-3">Username :</label>
+                        <div class="col-xs-6 col-sm-6">
+                          <input type="text" name="username" class="form-control input-lg" id="inputName" placeholder="Enter username">
+                        </div>
+                      </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                      <div class="form-group">
+                        <label class="col-xs-12 col-sm-3">Password :</label>
+                        <div class="col-xs-6 col-sm-6">
+                          <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Enter password">
+                        </div>
+                      </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                      <div class="form-group">
+                        <label class="col-xs-12 col-sm-3">Confirm Password :</label>
+                        <div class="col-xs-6 col-sm-6">
+                          <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm password">
+                        </div>
+                      </div>
+                    </div>
+
+                    <br />
+                    <div class="row">
+                      <div class="form-group">
+                        <label class="col-xs-12 col-sm-3">Full Name : </label>
+                            <div class="col-xs-6 col-sm-6">
+                              <input type="text" name="fullName" class="form-control input-lg" id="fullName" placeholder="Enter your full name">
+                            </div>
+                        </div>
+                      </div>
+
+                    <br />
+
+                    <div class="row">
+                      <div class="form-group">
+                        <label class="col-xs-12 col-sm-3">Email :</label>
+                        <div class="col-xs-6 col-sm-6">
+                          <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g. john@gmail.com">
+                        </div>
+                      </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                      <div class="form-group">
+                        <label class="col-xs-12 col-sm-3">Specialty :</label>
+                          <div class="col-xs-6 col-sm-6">
+                              <input type="text" name="specialty" class="form-control input-lg" id="specialty" placeholder="Enter your specialty">
+                          </div>
+                      </div>
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
+                    <br />
+                    <br />
+                  </div>
                 </div>
-              </div>
             </div>
-            <br />
-            <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
-            <br />
-            <br />
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-    <div class="container3">
-
-      <div class="modal fade" id="myModal2" role="dialog">
-        <div class="modal-dialog">
-        <div class="signUpForm_Trainer">
-
-          <div class="FormContent">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h2 class="modal-title" align="center"> Sign up as a trainer </h2>
-            </div>
-
-            <div class="modal-body">
-            <div class="row">
-              <div class="form-group">
-                <label class="col-xs-12 col-sm-3">Username : </label>
-                <div class="col-xs-6 col-sm-6">
-                  <input type="text" name="username" class="form-control input-lg" id="inputName" placeholder="Enter Username">
-                </div>
-              </div>
-            </div>
-
-          <br />
-
-          <div class="row">
-            <div class="form-group">
-              <label class="col-xs-12 col-sm-3">Password :</label>
-              <div class="col-xs-6 col-sm-6">
-                <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Enter Password">
-              </div>
-            </div>
-          </div>
-
-          <br />
-
-          <div class="row">
-            <div class="form-group">
-              <label class="col-xs-12 col-sm-3">Confirm Password :</label>
-              <div class="col-xs-6 col-sm-6">
-                <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm Password">
-              </div>
-            </div>
-          </div>
-
-          <br />
-          <div class="row">
-            <div class="form-group">
-              <label class="col-xs-12 col-sm-3">Full Name : </label>
-              <div class="col-xs-6 col-sm-6">
-                <input type="text" name="fullName" class="form-control input-lg" id="fullName" placeholder="Enter your Full Name">
-              </div>
-
-            </div>
-          </div>
-
-          <br />
-
-          <div class="row">
-            <div class="form-group">
-              <label class="col-xs-12 col-sm-3">Email :</label>
-              <div class="col-xs-6 col-sm-6">
-                <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g: john@gmail.com">
-              </div>
-            </div>
-          </div>
-
-          <br />
-
-          <div class="row">
-            <div class="form-group">
-              <label class="col-xs-12 col-sm-3">Level :</label>
-              <div class="col-xs-6 col-sm-6">
-                <input type="text" name="specialty" class="form-control input-lg" id="specialty" placeholder="Enter your specialty">
-
-              </div>
-            </div>
-          </div>
-          <br />
-          <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
-            <br />
-            <br />
-
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    </div>
-</body>
+  </body>
 </html>
