@@ -1,6 +1,9 @@
+/* styles.css */
+
 header{background-color:#ffffff;}
 /*nav background*/
-.nav-pills{background-color:#d50000;}
+.nav-pills{background-color:#d50000;
+           font-weight: bold;}
 /*initial nav color words */
 .nav-pills a{color:#ffffff;}
 /*black colour words when hover */
@@ -14,5 +17,5 @@ header{background-color:#ffffff;}
                                                               border :solid 1px;
                                                               border-color: #d50000;}
 /* */
-.nav-pills > li.active > a:hover {background-color: #eeee;
+.nav-pills > li.active > a:hover {background-color: #eeeeee;
                                   color:#000000;}
