@@ -10,7 +10,6 @@ https://stackoverflow.com/questions/35647044/boostrap-how-to-stick-a-button-over
 http://v4-alpha.getbootstrap.com/components/input-group/
 
 4. xs input center align
-
 Based on this example (original link: https://stackoverflow.com/questions/18036315/centering-bootstrap-input-fields):
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet" />
 <td style="background:#B3AEB5;">
