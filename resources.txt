@@ -19,3 +19,6 @@ Based on this example (original link: https://stackoverflow.com/questions/180363
     </div>
   </div>
 </td>
+
+5. update training record -> date
+https://stackoverflow.com/questions/32378590/set-date-input-fields-max-date-to-today
