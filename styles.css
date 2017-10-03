@@ -5,7 +5,9 @@ header{background-color:#ffffff;}
 .nav-pills{background-color:#d50000;
            font-weight: bold;}
 /*initial nav color words */
-.nav-pills a{color:#ffffff;}
+.nav-pills a{color:#ffffff;
+             border :solid 1px;
+             border-color: #ffffff;}
 /*black colour words when hover */
 .nav-pills a:hover{color:#000000;
                   background-color:#000000;}
@@ -13,9 +15,7 @@ header{background-color:#ffffff;}
 .nav-pills .active a:hover{color:#000000;}
 /* nav active color and background color */
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus {color: #000000;
-                                                              background-color: #ff8a80;
-                                                              border :solid 1px;
-                                                              border-color: #d50000;}
+                                                              background-color: #ff8a80;}
 /* */
 .nav-pills > li.active > a:hover {background-color: #eeeeee;
                                   color:#000000;}
