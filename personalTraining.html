@@ -20,6 +20,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </script>
   <script src="js/bootstrap.min.js"></script>
+  <script type = "text/javascript"  src = "formValidation.js" ></script>
 
   <header>
     <div class="row">
@@ -52,6 +53,7 @@
 
     <div class="container">
       <h2> Add Personal Training Session </h2><br />
+       <form name="myForm" onsubmit="return validateForm()" method="post">
     <div class="form-group">
       <div class="table-responsive">
         <table class="table table-bordered">
@@ -91,6 +93,7 @@
     </a>
   </div>
 </div>
+    </form>
     </body>
 <footer>
       <div class="container">
