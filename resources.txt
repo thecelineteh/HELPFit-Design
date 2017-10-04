@@ -22,3 +22,6 @@ Based on this example (original link: https://stackoverflow.com/questions/180363
 
 5. update training record -> date
 https://stackoverflow.com/questions/32378590/set-date-input-fields-max-date-to-today
+
+6. carousel style
+https://stackoverflow.com/questions/39937072/styling-bootstrap-carousel-indicators
