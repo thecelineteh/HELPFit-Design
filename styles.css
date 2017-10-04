@@ -6,8 +6,7 @@ header{background-color:#ffffff;}
            font-weight: bold;}
 /*initial nav color words */
 .nav-pills a{color:#ffffff;
-              border :solid 1px;
-              border-color: #ffffff;}
+              border-right : 1px solid #ffffff;}
 /*black colour words when hover */
 .nav-pills a:hover{color:#000000;
                   background-color:#000000;}
