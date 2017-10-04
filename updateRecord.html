@@ -232,6 +232,8 @@
           <div class="modal-dialog">
             <div class="updateRecord_1">
 
+              <form name="myForm" onsubmit="return updateForm()" method="post">
+
               <div class="FormContent">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -261,6 +263,8 @@
 
                   <br />
 
+                  <script type="text/javascript" src="date.js"></script>
+
                   <div class="row">
                     <div class="form-group">
                       <label class="col-xs-3 col-sm-4">Date :</label>
@@ -270,8 +274,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <script type="text/javascript" src="date.js"></script>
 
                   <br />
 
@@ -302,7 +304,7 @@
                     <div class="form-group">
                       <label class="col-xs-3 col-sm-4">Status :</label>
                       <div class="col-xs-6 col-sm-6">
-                        <select class="form-control">
+                        <select class="form-control" id="sessionStatus">
                           <option value="Choose status" selected disabled>Choose status</option>
                           <option value="Cancelled">Cancelled</option>
                           <option value="Completed">Completed</option>
@@ -318,7 +320,7 @@
                     <div class="form-group">
                       <label class="col-xs-3 col-sm-4">Class type :</label>
                       <div class="col-xs-6 col-sm-6">
-                        <select class="form-control">
+                        <select class="form-control" id="sessionType">
                           <option value="Choose class type" selected disabled>Choose class type</option>
                           <option value="Sport">Sport</option>
                           <option value="Dance">Dance</option>
@@ -338,6 +340,8 @@
 
                 </div>
               </div>
+
+              </form>
 
             </div>
           </div>
