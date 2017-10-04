@@ -1,3 +1,4 @@
+// formValidation.js
 
 function validateForm() {
     var title = document.forms["myForm"]["title"].value;

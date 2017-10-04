@@ -5,7 +5,7 @@ confirm
 JS validation alert for date of training not passed (S102, S103)
 last modified-> same as date?
 
-Remove comments & test (Login links)
+Remove comments & test (Login links) + buttons + date.js comments
 
 
 
