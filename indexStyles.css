@@ -13,10 +13,11 @@ header{background-color:#ffffff;}
                   margin:auto;}
 .formContent{background-color:#fafafa;
             color:#000000;}
-#img{width:600px;
+#img1, #img2 {width:600px;
     height:400px;
     margin:auto;
     padding:10px;}
+.section-divider {margin-top:10px}
 .img-overlay {
         position: absolute;
         top: 310;
@@ -38,4 +39,10 @@ header{background-color:#ffffff;}
 .button-style:hover {
   background-color: #eeeeee;
   color: black;
+}
+
+footer {padding:10px}
+
+@media only screen and (max-width:768px){
+	#myCarousel { display: none; }
 }
