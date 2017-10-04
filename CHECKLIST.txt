@@ -1,0 +1,7 @@
+JS validation alert for date of training not passed (S102, S103)
+
+Footer
+
+Remove comments & test (Login links)
+
+Upload file for profile pic -> Yap code

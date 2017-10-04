@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8" />
+    <meta name = "viewport" content = "width = device-width", initial-
+    scale = "1">
+    <title>Edit Member Profile</title>
+    <link rel="icon" href="assets/Gym-logo.png">
+    <link rel = "stylesheet" href = "css/bootstrap.min.css" />
+    <link rel = "stylesheet" href = "css/styles.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+    .nopadding{
+      padding:none;
+    }
+
+    .nomargin{
+      margin:none;
+    }
+
+    .navbar{
+      border-radius: 0;
+    }
+    .navbar-brand {
+      font-size: 25px;
+    }
+    .profile-img{
+      margin-top: -5px;
+      margin-right: 5px;
+      float: left;
+      background: url(assets/person-flat.png) 50% 50% no-repeat; /* 50% 50% centers image in div */
+      background-size: auto 100%; /* Interchange this value depending on prefering width vs. height */
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (min-width: 576px){
+      .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      }
+
+      .navbar .navbar-collapse {
+          text-align: center;
+      }
+    }
+    </style>
+  </head>
+
+  <body>
+    <script src = "js/jquery-3.2.1.min.js"></script>
+    <script src = "js/bootstrap.min.js"></script>
+    <script src = "js/script.js"></script>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+
+        <div class = "navbar-header">
+          <a class="navbar-brand" href="#">
+            <span style = "background-image: url(Gym-logo.png);"></span>
+            HELP Fit
+          </a>
+          <button = class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+          </button>
+        </div>
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+          <ul class = "nav navbar-nav">
+            <li>
+              <a href="newpersonalsession.html">
+                <span class = "glyphicon glyphicon-blackboard"></span>
+                Training Session
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class = "glyphicon glyphicon-time"></span>
+                Training History
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <p class = "collapse navbar-collapse navbar-text">Welcome,</p>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <!-- The Profile picture inserted via div class below, with shaping provided by Bootstrap -->
+                    <div class="img-rounded profile-img"></div>
+                    User Name<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">
+                          <span class = "glyphicon glyphicon-edit"></span>
+                          &nbsp&nbspEdit Profile
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                          <span class = "glyphicon glyphicon-log-out"></span>
+                          &nbsp&nbspLog out
+                        </a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class = "nopadding nomargin">
+    <div>
+      <h1 style="margin-top:none; border:none; padding-left:5%;">Edit Profile</h1>
+      <div align="middle" id="dvPreview"></div>
+    </div>
+</div>
+    <br>
+
+    <div class="container" style="max-width:500px;">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class ="formControl">
+            <form>
+
+              <div class="form-group">
+              <label for="profilepic" class="col-2 col-form-label">Profile Picture:</label>
+                <input id="fileupload" type="file">
+            </div>
+
+            <br>
+
+            <div class = "form-group">
+              <label for = "full-name">New Full Name:</label>
+              <input type = "text" class = "form-control" id = "full-name" required>
+            </div>
+
+            <br>
+
+            <div class = "form-group">
+              <label for = "password">New Password:</label>
+              <input type = "password" class = "form-control" id = "password" required>
+            </div>
+
+            <br>
+
+            <div class = "form-group">
+              <label for = "email">New Email:</label>
+              <input type = "email" class = "form-control" id = "email" required>
+            </div>
+
+            <br>
+
+            <div class = "form-group">
+              <label for ="level">New Level:</label>
+              <br>
+              <select name ="level">
+                <option value = "beginner">Beginner</option>
+                <option value = "advance">Advance</option>
+                <option value = "expert">Expert</option>
+              </select>
+            </div>
+
+            <br>
+
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<script language="javascript" type="text/javascript">
+$(function () {
+   $("#fileupload").change(function () {
+       if (typeof (FileReader) != "undefined") {
+           var dvPreview = $("#dvPreview");
+           dvPreview.html("");
+           var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+           $($(this)[0].files).each(function () {
+               var file = $(this);
+               if (regex.test(file[0].name.toLowerCase())) {
+                   var reader = new FileReader();
+                   reader.onload = function (e) {
+                       var img = $("<img />");
+                       img.attr("style", "height:100px;width: 100px");
+                       img.attr("src", e.target.result);
+                       dvPreview.append(img);
+                   }
+                   reader.readAsDataURL(file[0]);
+               } else {
+                   alert(file[0].name + " is not a valid image file.");
+                   dvPreview.html("");
+                   return false;
+               }
+           });
+       } else {
+           alert("This browser does not support HTML5 FileReader.");
+       }
+   });
+});
+</script>
