@@ -57,27 +57,28 @@
         <table class="table table-bordered">
 
         <tr>
-          <td>Title : </td>
+          <th>Title : </th>
           <td><input type="text" name="title" placeholder="Enter Title"
             class="form-control input-lg"></td>
         </tr>
 
         <tr>
-          <td>Date : </td>
-          <td><input type="text" name="date" class="form-control input-lg" placeholder="Enter Date"></td>
+          <th>Date : </th>
+          <td><input type="date" name="sessionDate" class="form-control input-lg" id="sessionDate"
+            min="2017-10-03" max="2100-12-31" placeholder="Enter Date (e.g. DD-MM-YYY)"></td>
+        </tr>
+
+        <script type="text/javascript" src="date.js"></script>
+
+        <tr>
+          <th>Time : </th>
+          <td><input type="time" name="sessionTime" class="form-control input-lg" id="sessionTime"
+            placeholder="Enter Time (e.g. 10:00 AM)"></td>
         </tr>
 
         <tr>
-          <td>Time : </td>
-          <td><input type="text" name="time" class="form-control input-lg" placeholder="Enter Time"></td>
-        </tr>
-
-        <tr>
-          <td>Fee : </td>
-          <td>
-            <span class="input-group-addon" id="RM">RM</span>
-          </td>
-          <td>
+          <th>Fee : </th>
+          <td class="row">
             <input type="text" name="fee" class="form-control input-lg" placeholder="Enter Fee">
           </td>
         </tr>

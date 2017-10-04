@@ -49,7 +49,7 @@
         <li><a href="updateRecord.html"> Update Training Record </a></li>
       </ul>
     </div>
-    
+
     <div class="container">
       <h2> Add Group Training Session </h2><br />
     <div class="form-group">
@@ -57,28 +57,39 @@
         <table class="table table-bordered">
 
         <tr>
-          <td>Title : </td>
+          <th>Title : </th>
           <td><input type="text" name="title" placeholder="Enter Title"
             class="form-control input-lg"></td>
         </tr>
 
         <tr>
-          <td>Date : </td>
-          <td><input type="text" name="date" class="form-control input-lg" placeholder="Enter Date (eg.DD-MM-YYY)"></td>
+          <th>Date : </th>
+          <td><input type="date" name="sessionDate" class="form-control input-lg" id="sessionDate"
+            min="2017-10-03" max="2100-12-31" placeholder="Enter Date (e.g. DD-MM-YYY)"></td>
+        </tr>
+
+        <script type="text/javascript" src="date.js"></script>
+
+        <tr>
+          <th>Time : </th>
+          <td><input type="time" name="sessionTime" class="form-control input-lg" id="sessionTime"
+            placeholder="Enter Time (e.g. 10:00 AM)"></td>
         </tr>
 
         <tr>
-          <td> Time : </td>
-          <td><input type="text" name="time" class="form-control input-lg" placeholder="Enter Time (eg. 10:00 AM)"></td>
+          <th>Fee : </th>
+          <td class="row">
+            <input type="text" name="fee" class="form-control input-lg" placeholder="Enter Fee">
+          </td>
         </tr>
 
         <tr>
-          <td>Max. Prticipants : </td>
-          <td><input type="text" name="maxPax" class="form-control input-lg" placeholder="Enter Maximum Participants"></td>
+          <th>Max Participants : </th>
+          <td><input type="number" name="maxPax" class="form-control input-lg" placeholder="Enter Maximum Participants"></td>
         </tr>
 
         <tr>
-          <td>Class Type : </td>
+          <th>Class Type : </th>
           <td><select class="form-control">
             <option value="Choose your class type" selected disabled>Choose your class type </option>
             <option value="Sport"> Sport </option>
