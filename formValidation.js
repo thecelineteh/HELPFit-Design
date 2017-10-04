@@ -1,8 +1,8 @@
 
 function validateForm() {
     var title = document.forms["myForm"]["title"].value;
-    var date = document.forms["myForm"]["date"].value;
-    var time = document.forms["myForm"]["time"].value;
+    var date = document.forms["myForm"]["sessionDate"].value;
+    var time = document.forms["myForm"]["sessionTime"].value;
     var fee = document.forms["myForm"]["fee"].value;
     if (title === "") {
         alert("Title cannot be blank !");
