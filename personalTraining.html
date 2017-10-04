@@ -61,34 +61,34 @@
         <tr>
           <th>Title : </th>
           <td><input type="text" name="title" placeholder="Enter Title"
-            class="form-control input-lg"></td>
+            class="form-control input-lg" id="title></td>
         </tr>
 
         <tr>
           <th>Date : </th>
           <td><input type="date" name="sessionDate" class="form-control input-lg" id="sessionDate"
-            min="2017-10-03" max="2100-12-31" placeholder="Enter Date (e.g. DD-MM-YYY)"></td>
+            min="2017-10-03" max="2100-12-31" id="date" placeholder="Enter Date (e.g. DD-MM-YYY)"></td>
         </tr>
 
         <script type="text/javascript" src="date.js"></script>
 
         <tr>
           <th>Time : </th>
-          <td><input type="time" name="sessionTime" class="form-control input-lg" id="sessionTime"
+          <td><input type="time" name="sessionTime" class="form-control input-lg" id="sessionTime" id="time"
             placeholder="Enter Time (e.g. 10:00 AM)"></td>
         </tr>
 
         <tr>
           <th>Fee : </th>
           <td class="row">
-            <input type="text" name="fee" class="form-control input-lg" placeholder="Enter Fee">
+            <input type="text" name="fee" class="form-control input-lg" id="fee" placeholder="Enter Fee">
           </td>
         </tr>
         </table>
     </div>
   </div>
   <div class="col-xs-12 col-md-11 pull-right">
-      <button type="submit" class="btn btn-primary btn-lg pull-right"> Add Session </button>
+      <button type="submit" class="btn btn-primary btn-lg pull-right" id="submit"> Add Session </button>
       <a href="trainingSession.html" class="btn btn-danger btn-lg pull-right">Back</a>
     </a>
   </div>
