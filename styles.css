@@ -22,3 +22,12 @@ header{background-color:#ffffff;}
 .pull-right {margin-top: 5px; margin-right:3px;}
 
 a:hover {text-decoration: none}
+
+footer{background-color:#ffffff;
+      color:#000000;
+      text-decoration:none;
+      font-size: 20px;}
+
+.footerNav{text-align: right;}
+.footNav{list-style:none;
+            color:#000000;}
