@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href ="css/bootstrap-social.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Edit Member Profile </title>
+
+    <style>
+      .pull-right {margin-top: 5px; margin-right:3px;}
+      .container {border: 1px solid black; margin-top: 30px; margin-bottom: 30px; padding: 10px}
+      label {font-size: 12pt}
+      .showdetail {font-weight: normal}
+    </style>
+  </head>
+
+  <body class="main">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <header>
+      <div class="row">
+        <div class="col-xs-8 col-md-9 col-lg-10">
+          <a href="welcomeMember.html">
+            <img src="images/helpfitLogo.png" alt="HELPFit Logo" width="350" height="90">
+          </a>
+        </div>
+          <br />
+
+          <div class="input-group-btn col-xs-4 col-md-3 col-lg-2 pull-right">
+            <button type="button" class="btn btn-default btn-md dropdown-toggle pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-user"></span> John Tan
+              <b class="caret"></b>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="displayMemberProfile.html">View profile</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="row">
+            <ul class="nav nav-pills nav-justified">
+              <li><a href="welcomeMember.html"> Home </a></li>
+              <li><a href="registerSession.html"> Training Session </a></li>
+              <li><a href="memberTrainingHist.html"> Training History </a></li>
+              <li><a href="reviewTrainer.html"> Review Trainer </a></li>
+            </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 align="center">Member Profile</h2>
+        <br />
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-md-2 col-md-offset-1 col-lg-4" align="center">
+            <br />
+            <img src="images/userProfilePic.png"  alt="Profile Picture" class="img-circle" width="180" height="180">
+            <br />
+            <br />
+            <h4>My Profile Picture</h4>
+            <br />
+            <br />
+            <br />
+          </div>
+
+          <br />
+
+          <div align="center">
+            <div class="form-group col-xs-12 col-sm-5 col-md-offset-1 col-lg-4 col-lg-offset-0">
+              <label class="col-xs-12 col-sm-5 col-lg-4">Username :</label>
+              <label class="col-xs-12 col-sm-6 col-lg-4 showdetail">john123</label>
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-6 col-md-offset-1 col-lg-4 col-lg-offset-0">
+              <label class="col-xs-12 col-sm-4 col-lg-4">Password :</label>
+              <div class="col-xs-12 col-sm-8 col-lg-8">
+                <input type="password" name="password" class="form-text input-lg" id="inputPswd" placeholder="Enter password">
+              </div>
+            </div>
+
+
+            <div class="form-group col-xs-12 col-sm-6 col-md-offset-1 col-lg-4 col-lg-offset-0">
+              <label class="col-xs-12 col-sm-4 col-lg-4">Confirm Password :</label>
+              <div class="col-xs-12 col-sm-8 col-lg-8">
+                <input type="password" name="password" class="form-text input-lg" id="confirmPswd" placeholder="Confirm password">
+              </div>
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-6 col-md-offset-1 col-lg-4 col-lg-offset-0">
+              <label class="col-xs-12 col-sm-4 col-lg-4">Full Name :</label>
+              <div class="col-xs-12 col-sm-8 col-lg-8">
+                <input type="text" name="fullName" class="form-text input-lg" id="fullName" placeholder="Enter your full name">
+              </div>
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-6 col-md-offset-1 col-lg-4 col-lg-offset-0">
+              <label class="col-xs-12 col-sm-4 col-lg-4">Email :</label>
+              <div class="col-xs-12 col-sm-8 col-lg-8">
+                <input type="email" name="email" class="form-text input-lg" id="email" placeholder="e.g. john@gmail.com">
+              </div>
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-6 col-md-offset-1 col-lg-4 col-lg-offset-0">
+              <label class="col-xs-12 col-sm-4 col-lg-4">Level :</label>
+              <div class="col-xs-3">
+              </div>
+              <div class="col-xs-6 col-sm-8 col-lg-8">
+                <select class="form-control">
+                  <option value="Choose your level" selected disabled>Choose your level</option>
+                  <option value="Beginner">Beginner</option>
+                  <option value="Advanced">Advanced</option>
+                  <option value="Expert">Expert</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <br />
+
+        <div class="col-xs-12 col-md-11">
+          <button type="submit" class="btn btn-primary btn-lg pull-right">Update</button>
+          <a href="displayMemberProfile.html" class="btn btn-danger btn-lg pull-right">Cancel</a>
+        </div>
+
+        <br />
+      </div>
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+Resources/references
+
+1. Slideshow
+https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+2. Button over image
+https://stackoverflow.com/questions/35647044/boostrap-how-to-stick-a-button-over-an-image-when-re-sizing
+
+3. Header-> drop down user
+http://v4-alpha.getbootstrap.com/components/input-group/
+
+4. xs input center align
+Based on this example (original link: https://stackoverflow.com/questions/18036315/centering-bootstrap-input-fields):
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet" />
+<td style="background:#B3AEB5;">
+  <div class="form-group text-center">
+    <div class="input-group" style="margin:auto;">
+      <input type="month" name="p2" value="test">
+    </div>
+  </div>
+</td>
+
+5. update training record -> date
+https://stackoverflow.com/questions/32378590/set-date-input-fields-max-date-to-today

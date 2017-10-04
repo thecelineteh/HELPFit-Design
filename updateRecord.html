@@ -1,0 +1,774 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href ="css/bootstrap-social.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Update Training Record </title>
+    <style>
+      .pull-right {margin-top: 5px; margin-right:3px;}
+      .container {border: 1px solid black; margin-top: 30px; margin-bottom: 30px; padding: 10px}
+      .input-group {margin-right: 25px; }
+      table {border: 1px solid black; margin:30px; margin-top: 15px}
+      td {padding: 10px;}
+      .session-group {border-bottom: 1px solid black;}
+      .formContent{background-color:#fafafa;
+                  color:#000000;}
+
+    </style>
+  </head>
+
+  <body class="main">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <header>
+      <div class="row">
+        <div class="col-xs-8 col-md-9 col-lg-10">
+          <img src="images/helpfitLogo.png" alt="HELPFit Logo" width="350" height="90">
+        </div>
+          <br />
+
+          <div class="input-group-btn col-xs-4 col-md-3 col-lg-2 pull-right">
+            <button type="button" class="btn btn-default btn-md dropdown-toggle pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-user"></span> Ben Lee
+              <b class="caret"></b>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">View profile</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+            <ul class="nav nav-pills nav-justified">
+              <li><a href="welcomeMember.html"> Home </a></li>
+              <li><a href="#"> Training Session </a></li>
+              <li class="active"><a href="#"> Training History </a></li>
+              <li><a href="#"> Review Trainer </a></li>
+            </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 align="center">Update Training Record</h2>
+      <br />
+
+      <div class="row">
+        <div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 pull-right">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary glyphicon glyphicon-search" type="button">
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <table>
+        <div class="row">
+          <tr class="col-xs-12 session-group" align="center">
+            <td><img src="images/session1.jpg" class="img-circle" alt="Session 1 Picture" width="150" height="120"></td>
+            <td align="left">
+              <h4>Session ID: S100</h4>
+              <h5>Title: Be a Good Sport with Cross Country!</h5>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#viewRecord1">View details</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateRecord1">Update session</button>
+            </td>
+          </tr>
+          <tr class="col-xs-12 session-group" align="center">
+            <td><img src="images/session2.jpg" class="img-circle" alt="Session 2 Picture" width="130" height="140"></td>
+            <td align="left">
+              <h4>Session ID: S101</h4>
+              <h5>Title: Build Up Your Skills with Trainer Ben</h5>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#viewRecord2">View details</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateRecord2">Update session</button>
+            </td>
+          </tr>
+          <tr class="col-xs-12" align="center">
+            <td><img src="images/session3.jpg" class="img-circle" alt="Session 3 Picture" width="140" height="120"></td>
+            <td align="left">
+              <h4>Session ID: S102</h4>
+              <h5>Title: Personal Zumba + Yoga Session &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#viewRecord3">View details</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateRecord3">Update session</button>
+            </td>
+          </tr>
+        </div>
+      </table>
+
+      <!-- Pop-up overlay to view record and update record for session S100-->
+      <div class="container2">
+        <div class="modal fade" id="viewRecord1" role="dialog">
+          <div class="modal-dialog">
+            <div class="viewRecord_1">
+
+              <div class="FormContent">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title" align="center">Group Training Record</h2>
+                </div>
+
+                <div class="modal-body" align="right">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Session ID :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        S100
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Title :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Be a Good Sport with Cross Country!
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Date :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        2017-09-30
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Time :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        6:00 PM
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Fee :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        RM 10
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Status :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Completed
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Class type :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Sport
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Max participants :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        10
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Num participants :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        7
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container3">
+        <div class="modal fade" id="updateRecord1" role="dialog">
+          <div class="modal-dialog">
+            <div class="updateRecord_1">
+
+              <div class="FormContent">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title" align="center">Update Group Training Record</h2>
+                </div>
+
+                <div class="modal-body" align="right">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Session ID :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        S100
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Title :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Be a Good Sport with Cross Country!
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Date :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="date" name="sessionDate" class="form-control input-md" id="sessionDate" min="2017-10-03" max="2100-12-31">
+                      </div>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript" src="date.js"></script>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Time :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="time" name="sessionTime" class="form-control input-md" id="sessionTime">
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Fee :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="number" name="sessionFee" class="form-control input-md" id="sessionFee" placeholder="RM" min="0">
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Status :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <select class="form-control">
+                          <option value="Choose status" selected disabled>Choose status</option>
+                          <option value="Cancelled">Cancelled</option>
+                          <option value="Completed">Completed</option>
+                          <option value="Available">Available</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Class type :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <select class="form-control">
+                          <option value="Choose class type" selected disabled>Choose class type</option>
+                          <option value="Sport">Sport</option>
+                          <option value="Dance">Dance</option>
+                          <option value="MMA">MMA</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                      <button type="submit" class="btn btn-primary btn-lg pull-right">Update</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pop-up overlay to view record and update record for session S101-->
+      <div class="container4">
+        <div class="modal fade" id="viewRecord2" role="dialog">
+          <div class="modal-dialog">
+            <div class="viewRecord_2">
+
+              <div class="FormContent">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title" align="center">Personal Training Record</h2>
+                </div>
+
+                <div class="modal-body" align="right">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Session ID :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        S101
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Title :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Build Up Your Skills with Trainer Ben
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Date :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        2017-10-05
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Time :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        10:00 AM
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Fee :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        RM 30
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Status :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Full
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Notes :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Daily recommended exercise: 10 pushups + 20 burpees
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Member :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        John Tan
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container5">
+        <div class="modal fade" id="updateRecord2" role="dialog">
+          <div class="modal-dialog">
+            <div class="updateRecord_2">
+
+              <div class="FormContent">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title" align="center">Update Personal Training Record</h2>
+                </div>
+
+                <div class="modal-body" align="right">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Session ID :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        S101
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Title :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Build Up Your Skills with Trainer Ben
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Date :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="date" name="sessionDate" class="form-control input-md" id="sessionDate" min="2017-10-03" max="2100-12-31">
+                      </div>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript" src="date.js"></script>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Time :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="time" name="sessionTime" class="form-control input-md" id="sessionTime">
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Fee :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="number" name="sessionFee" class="form-control input-md" id="sessionFee" placeholder="RM" min="0">
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Status :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <select class="form-control">
+                          <option value="Choose status" selected disabled>Choose status</option>
+                          <option value="Cancelled">Cancelled</option>
+                          <option value="Completed">Completed</option>
+                          <option value="Available">Available</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Notes :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="text" name="notes" class="form-control input-md" id="notes" placeholder="Enter notes">
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                      <button type="submit" class="btn btn-primary btn-lg pull-right">Update</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pop-up overlay to view record and update record for session S102-->
+      <div class="container6">
+        <div class="modal fade" id="viewRecord3" role="dialog">
+          <div class="modal-dialog">
+            <div class="viewRecord_3">
+
+              <div class="FormContent">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title" align="center">Personal Training Record</h2>
+                </div>
+
+                <div class="modal-body" align="right">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Session ID :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        S102
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Title :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Personal Zumba + Yoga Session
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Date :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        2017-10-07
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Time :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        4:00 PM
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Fee :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        RM 0
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Status :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Available
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Notes :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        -
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-5 col-sm-4">Member :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        -
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container7">
+        <div class="modal fade" id="updateRecord3" role="dialog">
+          <div class="modal-dialog">
+            <div class="updateRecord_3">
+
+              <div class="FormContent">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title" align="center">Update Personal Training Record</h2>
+                </div>
+
+                <div class="modal-body" align="right">
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Session ID :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        S102
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Title :</label>
+                      <div class="col-xs-6 col-sm-6" align="left">
+                        Personal Zumba + Yoga Session
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Date :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="date" name="sessionDate" class="form-control input-md" id="sessionDate" min="2017-10-03" max="2100-12-31">
+                      </div>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript" src="date.js"></script>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Time :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="time" name="sessionTime" class="form-control input-md" id="sessionTime">
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Fee :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="number" name="sessionFee" class="form-control input-md" id="sessionFee" placeholder="RM" min="0">
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Status :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <select class="form-control">
+                          <option value="Choose status" selected disabled>Choose status</option>
+                          <option value="Cancelled">Cancelled</option>
+                          <option value="Completed">Completed</option>
+                          <option value="Available">Available</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="form-group">
+                      <label class="col-xs-3 col-sm-4">Notes :</label>
+                      <div class="col-xs-6 col-sm-6">
+                        <input type="text" name="notes" class="form-control input-md" id="notes" placeholder="Enter notes">
+                      </div>
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                      <button type="submit" class="btn btn-primary btn-lg pull-right">Update</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
