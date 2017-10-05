@@ -34,8 +34,9 @@
                 <label> Password : </label>
                 <input type="password" name="password" id="password" placeholder="Enter password" size="17">
                 &nbsp;
-                <!--<button type="submit">Login</button>-->
-                <a href="welcomeMember.html">Login</a>
+                <a href="welcomeMember.html">
+                  <button type="button" class="btn btn-primary button-style">Login</button>
+                </a>
                 &nbsp;
             </div>
           </form>
@@ -144,7 +145,7 @@
               <div class="form-group">
                 <label class="col-xs-12 col-sm-3">Username :</label>
                 <div class="col-xs-6 col-sm-6">
-                  <input type="text" name="username" class="form-control input-lg" id="inputName" placeholder="Enter username">
+                  <input type="text" name="username" class="form-control input-lg" id="inputName" placeholder="Enter username" required>
                 </div>
               </div>
             </div>
@@ -155,7 +156,7 @@
               <div class="form-group">
                 <label class="col-xs-12 col-sm-3">Password :</label>
                 <div class="col-xs-6 col-sm-6">
-                  <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Enter password">
+                  <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Enter password" required>
                 </div>
               </div>
             </div>
@@ -166,7 +167,7 @@
               <div class="form-group">
                 <label class="col-xs-12 col-sm-3">Confirm Password :</label>
                 <div class="col-xs-6 col-sm-6">
-                  <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm password">
+                  <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm password" required>
                 </div>
               </div>
             </div>
@@ -177,7 +178,7 @@
               <div class="form-group">
                 <label class="col-xs-12 col-sm-3">Full Name : </label>
                 <div class="col-xs-6 col-sm-6">
-                  <input type="text" name="fullName" class="form-control input-lg" id="fullName" placeholder="Enter your full name">
+                  <input type="text" name="fullName" class="form-control input-lg" id="fullName" placeholder="Enter your full name" required>
                 </div>
               </div>
             </div>
@@ -188,7 +189,7 @@
               <div class="form-group">
                 <label class="col-xs-12 col-sm-3">Email :</label>
                 <div class="col-xs-6 col-sm-6">
-                  <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g. john@gmail.com">
+                  <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g. john@gmail.com" required>
                 </div>
               </div>
             </div>
@@ -199,7 +200,7 @@
               <div class="form-group">
                 <label class="col-xs-12 col-sm-3">Level :</label>
                 <div class="col-xs-6 col-sm-6">
-                  <select class="form-control">
+                  <select class="form-control" required>
                     <option value="Choose your level" selected disabled>Choose your level</option>
                     <option value="Beginner">Beginner</option>
                     <option value="Advanced">Advanced</option>
@@ -236,7 +237,7 @@
                     <div class="form-group">
                       <label class="col-xs-12 col-sm-3">Username :</label>
                       <div class="col-xs-6 col-sm-6">
-                        <input type="text" name="username" class="form-control input-lg" id="inputName" placeholder="Enter username">
+                        <input type="text" name="username" class="form-control input-lg" id="inputName" placeholder="Enter username" required>
                       </div>
                     </div>
                   </div>
@@ -247,7 +248,7 @@
                     <div class="form-group">
                       <label class="col-xs-12 col-sm-3">Password :</label>
                       <div class="col-xs-6 col-sm-6">
-                        <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Enter password">
+                        <input type="password" name="password" class="form-control input-lg" id="inputPswd" placeholder="Enter password" required>
                       </div>
                     </div>
                   </div>
@@ -258,7 +259,7 @@
                     <div class="form-group">
                       <label class="col-xs-12 col-sm-3">Confirm Password :</label>
                       <div class="col-xs-6 col-sm-6">
-                        <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm password">
+                        <input type="password" name="password" class="form-control input-lg" id="confirmPswd" placeholder="Confirm password" required>
                       </div>
                     </div>
                   </div>
@@ -268,7 +269,7 @@
                     <div class="form-group">
                       <label class="col-xs-12 col-sm-3">Full Name : </label>
                           <div class="col-xs-6 col-sm-6">
-                            <input type="text" name="fullName" class="form-control input-lg" id="fullName" placeholder="Enter your full name">
+                            <input type="text" name="fullName" class="form-control input-lg" id="fullName" placeholder="Enter your full name" required>
                           </div>
                       </div>
                     </div>
@@ -279,7 +280,7 @@
                     <div class="form-group">
                       <label class="col-xs-12 col-sm-3">Email :</label>
                       <div class="col-xs-6 col-sm-6">
-                        <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g. john@gmail.com">
+                        <input type="email" name="email" class="form-control input-lg" id="email" placeholder="e.g. john@gmail.com" required>
                       </div>
                     </div>
                   </div>
@@ -290,7 +291,7 @@
                     <div class="form-group">
                       <label class="col-xs-12 col-sm-3">Specialty :</label>
                         <div class="col-xs-6 col-sm-6">
-                            <input type="text" name="specialty" class="form-control input-lg" id="specialty" placeholder="Enter your specialty">
+                            <input type="text" name="specialty" class="form-control input-lg" id="specialty" placeholder="Enter your specialty" required>
                         </div>
                     </div>
                   </div>
@@ -304,8 +305,6 @@
         </div>
       </div>
     </div>
-    <!-- temp added to test -->
-  <a href="welcomeTrainer.html">Login Trainer</a>
 
   <footer>
     <div align="center">
