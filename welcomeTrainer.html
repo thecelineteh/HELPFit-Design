@@ -56,7 +56,9 @@
         <li><a href="updateRecord.html"> Update Training Record </a></li>
       </ul>
     </div>
-      <h1>Welcome, Ben Lee </h1>
+     <div>
+    <label id="greeting" style="font-size:30px;"></label>
+    </div>
 
       <div class ="notice">
         <div class="container">
@@ -113,6 +115,23 @@
         </nav>
         </div>
       </footer>
-
   </body>
+<script type="text/javascript">
+    var myDate = new Date();
+    var time = myDate.getHours();
+    var greet;
+    if (time < 12)
+      {
+      greet='Good morning';
+      }
+    else if(time > 12)
+      {
+      greet='Good afternoon';
+      }
+      else{
+        greet='Good day';
+      }
+   document.getElementById('greeting').innerHTML ='<b>' + greet + '</b> , John Tan';
+
+    </script>
 </html>
