@@ -13,18 +13,3 @@ var yyyy = today.getFullYear();
 
 today = yyyy + '-' + mm + '-' + dd
 document.getElementById("sessionDate").setAttribute("min", today);
-
-
-
-/*
-var form = document.getElementById('s102');
-var sessionDate = document.getElementById('fname');
-var lname = document.getElementById('lname');
-
-form.onsubmit = function(e) {
-  if (fname.value === '' || lname.value === '') {
-    e.preventDefault(); //stops the form submission
-    para.textContent = 'You need to fill in both names!';
-  }
-}
-*/

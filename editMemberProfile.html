@@ -21,6 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </script>
     <script src="js/bootstrap.min.js"></script>
+    <script type = "text/javascript"  src = "logoutConfirmation.js"></script>
 
     <header>
       <div class="row">
@@ -39,7 +40,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="displayMemberProfile.html">View profile</a></li>
               <li role="separator" class="divider"></li>
-              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+              <li><a class="dropdown-item" href="index.html" onclick="return logOut()">Logout</a></li>
             </ul>
           </div>
 
@@ -152,6 +153,6 @@
         </nav>
         </div>
       </footer>
-      
+
   </body>
 </html>
