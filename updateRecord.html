@@ -233,7 +233,7 @@
           <div class="modal-dialog">
             <div class="updateRecord_1">
 
-              <form name="myForm" onsubmit="return updateForm()" method="post">
+              <form name="updateForm" onsubmit="return updateForm()" method="post">
 
               <div class="FormContent">
                 <div class="modal-header">
@@ -271,7 +271,7 @@
                       <label class="col-xs-3 col-sm-4">Date :</label>
                       <div class="col-xs-6 col-sm-6">
                         <input type="date" name="sessionDate" class="form-control input-md" id="sessionDate"
-                        min="2017-10-03" max="2100-12-31" placeholder="Enter Date (e.g. DD-MM-YYY)">
+                        min="2017-10-03" max="2100-12-31" placeholder="Enter Date (e.g. DD-MM-YYY)" required>
                       </div>
                     </div>
                   </div>
@@ -283,7 +283,7 @@
                       <label class="col-xs-3 col-sm-4">Time :</label>
                       <div class="col-xs-6 col-sm-6">
                         <input type="time" name="sessionTime" class="form-control input-lg" id="sessionTime"
-                          placeholder="Enter Time (e.g. 10:00 AM)">
+                          placeholder="Enter Time (e.g. 10:00 AM)" required>
                       </div>
                     </div>
                   </div>
@@ -294,7 +294,7 @@
                     <div class="form-group">
                       <label class="col-xs-3 col-sm-4">Fee (RM):</label>
                       <div class="col-xs-6 col-sm-6">
-                        <input type="number" name="sessionFee" class="form-control input-md" id="sessionFee" placeholder="RM" min="0">
+                        <input type="number" name="sessionFee" class="form-control input-md" id="sessionFee" placeholder="RM" min="0" required>
                       </div>
                     </div>
                   </div>
@@ -305,7 +305,7 @@
                     <div class="form-group">
                       <label class="col-xs-3 col-sm-4">Status :</label>
                       <div class="col-xs-6 col-sm-6">
-                        <select class="form-control" id="sessionStatus">
+                        <select class="form-control" id="sessionStatus" required>
                           <option value="Choose status" selected disabled>Choose status</option>
                           <option value="Cancelled">Cancelled</option>
                           <option value="Completed">Completed</option>
@@ -321,7 +321,7 @@
                     <div class="form-group">
                       <label class="col-xs-3 col-sm-4">Class type :</label>
                       <div class="col-xs-6 col-sm-6">
-                        <select class="form-control" id="sessionType">
+                        <select class="form-control" id="sessionType" required>
                           <option value="Choose class type" selected disabled>Choose class type</option>
                           <option value="Sport">Sport</option>
                           <option value="Dance">Dance</option>
