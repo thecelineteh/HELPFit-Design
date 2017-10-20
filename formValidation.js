@@ -57,3 +57,14 @@ function updateForm() {
       alert("Session updated successfully !");
     }
 }
+
+function registerAccount() {
+  var pwd = document.forms["registerMember"]["inputPswd"].value;
+  var pwd2 = document.forms["registerMember"]["confirmPswd"].value;
+  if (pwd != pwd2){
+    alert("Your two password entries are not the same.");
+    document.forms["registerMember"]["confirmPswd"].focus();
+    document.forms["registerMember"]["confirmPswd"].select();
+    return false
+  }
+}
