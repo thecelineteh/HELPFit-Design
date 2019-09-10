@@ -8,4 +8,4 @@ A collaborative project with [Daenise](https://github.com/Daenise) for the cours
 * Bootstrap 
 * JavaScript
 
-The latest full-stack [HELPFit](https://github.com/thecelineteh/HELPFit) web version (includes both front- and back-end) is available [here](https://github.com/thecelineteh/HELPFit), which is similar to the course BIT216 Software Engineering Principles for the [JEE](https://github.com/thecelineteh/Jinjang-Empowerment-Ebusiness) case study project which I collaborated with [AdrianFoo97](https://github.com/AdrianFoo97).
+The latest full-stack [HELPFit](https://github.com/thecelineteh/HELPFit) web version (includes both front- and back-end) is available [here](https://github.com/thecelineteh/HELPFit), which is similar to the course BIT216 Software Engineering Principles for the [Jinjang Empowerment E-business (JEE)](https://github.com/thecelineteh/Jinjang-Empowerment-Ebusiness) case study project which I collaborated with [AdrianFoo97](https://github.com/AdrianFoo97).
