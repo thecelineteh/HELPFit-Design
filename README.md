@@ -1,6 +1,6 @@
 # HELPFit Web Application (Front-End Design)
 ## HELP University: BIT210 - Web Programming 
-Note: [thecelineteh](https://github.com/thecelineteh) contributed as [B1601563](https://github.com/B1601563).
+#### Note: [thecelineteh](https://github.com/thecelineteh) contributed as [B1601563](https://github.com/B1601563).
 
 A collaborative project with [AdrianFoo97](https://github.com/AdrianFoo97) for our web programming course. Our goal was to connect client-side scripting to server side scripting to develop a responsive web application for the case study of HELPFit. The following coding platforms/languages are used:
 * HTML5
